@@ -7,6 +7,7 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import Lottie from "react-lottie";
 import animationData from "@/data/confetti.json";
+import { Button } from "./MovingBorders";
 
 export const BentoGrid = ({
   className,
@@ -180,14 +181,20 @@ export const BentoGridItem = ({
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
+              <div onClick={handleCopy}>
+                <Button className="p-2.5 bg-[#161A31]">
+                  <IoCopyOutline className="mr-2" />
+                  {copied ? "Email is copied!" : "Copy my email address"}
+                </Button>
+              </div>
 
-              <MagicButton
+              {/* <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email address"}
                 icon={<IoCopyOutline />}
                 position="left"
                 handleClick={handleCopy}
                 otherClasses="!bg-[#161A31]"
-              />
+              /> */}
             </div>
           )}
         </div>

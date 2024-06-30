@@ -38,8 +38,8 @@ export const Hero = () => {
             Alexis, Next.js Developer based in Romania.
           </p>
           <a href="#about">
-            <Button>Show my work</Button>
-            <MagicButton title="Show my work" icon={<FaLocationArrow />} position="right" />
+            <Button       className="p-2.5"
+            >Show my work</Button>
           </a>
         </div>
       </div>
