@@ -2,12 +2,13 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { socialMedia } from "@/data";
 import { MagicButton } from "./ui/MagicButton";
+import { IoCopyOutline } from "react-icons/io5";
+import { Button } from "./ui/MovingBorders";
 
 export const Footer = () => {
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}
-
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
@@ -19,11 +20,15 @@ export const Footer = () => {
           achieve your goals.
         </p>
         <a href="mailto:moldovanalexismihai06@gmail.com">
-          <MagicButton
+          <Button className="p-2.5 bg-[#161A31]">
+            Let&apos;s get in touch
+            <FaLocationArrow className="ml-2" />
+          </Button>
+          {/* <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
             position="right"
-          />
+          /> */}
         </a>
       </div>
       <div className="flex mt-16 md:flex-row flex-col gap-3 md:gap-0 justify-between items-center">
